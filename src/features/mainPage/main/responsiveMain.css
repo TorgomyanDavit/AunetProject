@@ -1,0 +1,154 @@
+@media (max-width:1550px) {
+    .main {
+        display: block;
+    }
+
+    .mainImgDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 0;
+        position: relative;
+    }
+
+    .registerDiv {
+        width: 100%;
+        margin: 0 0;
+        flex-direction: column;
+    }
+
+    .registerDiv h1 {
+        text-align: center;
+    }
+
+    .descriptionTitle {
+        width: 80%;
+        margin: 0 auto;
+        height: initial;
+    }
+    .registerButtonDiv {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 31px;
+    }
+
+    .TvchannelDiv {
+        bottom: 150px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .groupImg {
+        display: none;
+    }
+
+    .underLine {
+        bottom: 0px;
+    }
+
+    .mainImgDiv img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:900px) {
+    .underLine {
+        display: none;
+    }
+
+    .TvchannelDiv {
+        position: unset;
+        height: fit-content;
+        padding: 32px 0 50px 0 ;
+    }
+
+    .registerDiv h1 {
+        line-height: 37px;
+        font-size: 30px;
+        z-index: 1;
+        position: relative;
+    }
+
+    .descriptionTitle {
+        font-size: 12px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .registerDiv {
+        height: fit-content;
+    }
+
+    .MainPage {
+        height: fit-content;
+    }
+}
+
+@media (max-width:600px) {
+    .registerButtonDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .Navlink {
+        width: 80%;
+        height: 44px;
+    }
+
+    .registerDiv {
+        height: fit-content;
+    }
+
+    .TvchannelDiv {
+        position: unset;
+        width: 341px;
+    }
+
+    .TvchannelDiv img:nth-child(1) {
+        width: 116px;
+        height: 38px;
+    }
+
+    .TvchannelDiv img:nth-child(2) {
+        width: 122px;
+        height: 41px;
+    }
+
+    .TvchannelDiv img:nth-child(3) {
+        width: 48px;
+        height: 26px;
+    }
+
+    .TvchannelDiv img:nth-child(4) {
+        width: 116px;
+        height: 34px;
+    }
+
+    .TvchannelDiv img:nth-child(5) {
+        width: 106px;
+        height: 29px;
+    }
+}
+
+@media (max-width:341px) {
+    .TvchannelDiv {
+        position: unset;
+        justify-content: center;
+        width: 100%;
+
+    }
+    
+    .TvchannelDiv img {
+        width: 250px;
+        height: 40px;
+    }
+}
+
+@media (max-width:375px) {
+    .underLine {
+        display: block;
+        top: 430px;
+        z-index: 0 !important;
+    }
+}

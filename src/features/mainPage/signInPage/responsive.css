@@ -1,0 +1,122 @@
+@media (min-width:1920px) {
+    .mainSignIn {
+        justify-content: center;
+    }
+}
+
+@media (max-width:1750px) {
+    .signInImgDiv {
+        margin: 33px 0 0 0;
+    }
+}
+
+@media (max-width:1450px) {
+    .signInImgDiv {
+        display: none;
+    }
+
+    .loginSignInDiv {
+        margin: 120px 0 0 38px;
+    }
+
+    .mainSignIn {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loginSignInDiv {
+        margin: 0;
+    }
+}
+
+@media (max-width:660px) {
+    .loginSignInDiv {
+        width: 95%;
+    }
+
+    .inputSignDiv {
+        width: fit-content;
+    }
+
+    .signInSubmit {
+        width: 100%;
+    }
+
+    .signInunderLine {
+        width: 100%;
+    }
+
+    .signInSocialMediaIcon p {
+        width: 43px;
+        height: 43px;
+    }
+    .signInSocialMediaIcon {
+        width: 215px;
+        height: 43px;
+    }
+
+    .SignInButton {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:375px) and (min-width:375px) {
+    .signInButtonDiv a {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .formSignIn input {
+        font-size: 15px;
+        height: 54px;
+        width: 296px;
+    }
+    
+    .labelForSignInPassvord button img {
+        width: 19px;
+        height: 15px;
+    }
+
+    .rememberPasswordLink {
+        font-size: 12px;
+    }
+
+    .rememberPassword {
+        height: 35px;
+    }
+
+    .formSignIn {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .signInSubmit {
+        width: 296px;
+        height: 51px;
+    }
+
+    .mainSignIn  {
+        height: fit-content !important;
+    }
+
+    .loginSignInDiv {
+        margin: 111px 0 201px 0;
+    }
+
+    .inputSignDiv {
+        height: fit-content;
+    }
+
+    .SignInSocialNetworkTitle {
+        height: 35px;
+        margin: none;
+    }
+
+    .signInSocialMediaIcon {
+        margin-bottom: 33px;
+    }
+
+    .signInButtonUnderLine {
+        right: 63px;
+    }
+}
