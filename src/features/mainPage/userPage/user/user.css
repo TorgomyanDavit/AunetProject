@@ -196,6 +196,12 @@
     animation-duration: 1s;
 }
 
+.ButtonUserData:hover {
+    background: #2A29B4;
+    color: white;
+    border: 1px solid #2A29B4;
+}
+
 @keyframes buttonPosition {
     0% {
         position: relative;
@@ -293,6 +299,7 @@
 .personName a {
     text-decoration: none;
     color: #282828;
+    width: 141px;
 }
 
 

@@ -346,7 +346,7 @@
 
     .description {
         text-align: center;
-        width: 204px;
+        width: 233px;
     }
 
     .registerDescriptionDiv {
@@ -384,6 +384,19 @@
 }
 
 @media (max-width:375px) and (min-width:375px) {
+
+    .active-contacts-div .timer-Div .timerButtonDiv {
+        margin-right: 45px;
+    }
+
+    .active-contacts-div .timer-Div .timer {
+        left: 19px;
+    }
+
+    #timerDiv1 .timering {
+        left: -17px;
+    }
+
     #timerDiv1 .timering{
         top: -28px;
     }

@@ -179,3 +179,8 @@
     border: none;
     cursor: pointer;
 }
+
+.contactFormTetx button:hover {
+    background: #2A29B4;
+    color: white;
+}

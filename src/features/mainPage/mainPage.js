@@ -13,19 +13,21 @@ import { ContactUs } from "./contactUs/contactUs.js"
 function MainPage() {
     let [type,setType] = useState("block")
     let [Width,setWidth] = useState("block")
+    const [toggle,setToggle] = useState(false)
+
 
     return (
         <div className="MainPage">
-           <Headers type={type} Width={Width}/>
+           <Headers type={type} Width={Width} toggle={toggle} setToggle={setToggle}/>
            <Switch>
                 <Route path="/about">
-                    <About/>
+                    <About toggle={toggle}/>
                 </Route>
                 <Route path="/FAQ">
-                    <Faq/>
+                    <Faq toggle={toggle}/>
                 </Route>
                 <Route path="/contactUs">
-                    <ContactUs/>
+                    <ContactUs toggle={toggle}/>
                 </Route>
                 <Route path="/register">
                     <Register/>
@@ -43,7 +45,7 @@ function MainPage() {
                         }
                         setType(display)
                         setWidth(size)
-                    }}/>
+                    }} toggle={toggle}/>
                 </Route>
            </Switch>
         </div>

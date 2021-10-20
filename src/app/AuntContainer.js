@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import MainPage from '../features/mainPage/mainPage';
 import './AuntContainer.css';
 import { BrowserRouter as Router} from "react-router-dom";

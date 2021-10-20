@@ -6,7 +6,7 @@ import "./main.css"
 import "./responsiveMain.css"
 
 
-function Main({changeType}) {
+function Main({changeType,toggle}) {
     const [play,setPlay] = useState(false)
     const [playImg,setPlayImg] = useState(false)
     const [width,setWidth] = useState(false)
@@ -25,7 +25,7 @@ function Main({changeType}) {
         }
     },[])
     return (
-        <main className="main">
+        <main className="main" style={{zIndex:toggle ? "-1" : "inherit"}}>
             <div className="mainImgDiv" style={{transform: playImg === true ? "translateY(-10px)" : "translateY(0px)"  }}>
                 { 
                     width ? <img src="/mainPageImages/imgResponsive.png" alt="mainImg"/>
@@ -33,7 +33,7 @@ function Main({changeType}) {
                 }
             </div>
             <div className="registerDiv">
-                <h1>Register and get <br/> access to more than +4000 channels</h1>
+                <h2>Register and get <br/> access to more than +4000 channels</h2>
                 <p className="descriptionTitle">
                     Lorem Ipsum is simply dummy text of the 
                     printing and typesetting industry. 

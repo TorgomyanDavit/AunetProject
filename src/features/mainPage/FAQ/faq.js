@@ -3,14 +3,14 @@ import "./faq.css"
 import "./responsive.css"
 
 
-export function Faq() {
+export function Faq({toggle}) {
     const state = useSelector((state) => state.mainPage)
     return (
-        <div className="faq">
-            <div><h2>FAQ</h2></div>
+        <div className="faq"  >
+            <div style={{zIndex:toggle ? "-1" : "inherit"}}><h2>FAQ</h2></div>
             {state.faq.map((val) => {
                 return (
-                    <p key={Math.random()} className="faqP">
+                    <p key={Math.random()} className="faqP" style={{zIndex:toggle ? "-1" : "inherit"}}>
                         <span>{val.name}</span>
                         <button>{val.simbol}</button>
                     </p>

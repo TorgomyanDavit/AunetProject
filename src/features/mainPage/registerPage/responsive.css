@@ -126,7 +126,7 @@
 
     .registerButtonUnderLine {
         bottom: -4px;
-        left: 68px;
+        left: 57px;
     }   
 
     .registerMAin {
@@ -144,6 +144,9 @@
 }
 
 @media screen and (max-width:300px) {
+    .registerButtonUnderLine {
+        width: 40px;
+    }   
     .inputDiv {
         width: 100%;
     }

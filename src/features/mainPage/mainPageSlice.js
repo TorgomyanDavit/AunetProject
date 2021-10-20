@@ -56,12 +56,13 @@ const initialState = {
     animationPathDone:"null",
     personImg:personImg,
     imgType:false,
+    innerSelect:["EN","RU","AM"],
     Id:"",
     regAndsignNone:true,
     personData:[
         {id:1,dataName:"name",inner:"Raya Galstyan",type:"text",display:"none",placeholder:"changeName",value:""},
-        {id:2,dataName:"name",inner:"AllNet@mail.ru",type:"text",display:"none",placeholder:"changeMail",value:""},
-        {id:3,dataName:"name",inner:"******",type:"password",display:"none",placeholder:"changePassword",value:""}
+        {id:2,dataName:"E-mail",inner:"AllNet@mail.ru",type:"text",display:"none",placeholder:"changeMail",value:""},
+        {id:3,dataName:"Password",inner:"******",type:"password",display:"none",placeholder:"changePassword",value:""}
     ],
     table:[
         {id:Math.random(),date:"20.02.2021",purpose:"purchase/extension of a pocket",balance:"3.00",theAmount:"3.00",remains:"3.00"},

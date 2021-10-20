@@ -98,6 +98,11 @@
     cursor: pointer;
 }
 
+.firstChild button:hover {
+    background: #2A29B4;
+    color: white;
+}
+
 .channelInputDivTitle {
     width: 900px;
     height: 298px;

@@ -4,10 +4,12 @@ import { NavLink} from "react-router-dom"
 import "./AresponsiveHeadeer.css"
 import "./header.css"
 
-function Headers({type,Width}) {
+function Headers({type,Width,setToggle,toggle}) {
     const state = useSelector((state) => state.mainPage)
-    const [toggle,setToggle] = useState(false)
     const [imgX,setimgX] = useState(false)
+    const [select,setSelect] = useState(false)
+    const [inner,setInner] = useState("EN")
+
 
     return (
         <header className="headerContainer">
@@ -18,16 +20,19 @@ function Headers({type,Width}) {
                         : state.animationPath === "/userPage/userHome" ? "menuLogo" : "menuLogo"} 
                         activeClassName="activeMAinPage"
                     >
-                        <img src="/mainPageImages/aunetLogo.png" alt="Logo" id="menuLogoimg"/>
+                        <img src="/mainPageImages/Logo.png" alt="Logo" id="menuLogoimg"/>
                     </NavLink>
-                <div className="toggle" style={{display:toggle ? "flex" : "none"}}>
-                    <NavLink to="/about" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">About</NavLink>
-                    <NavLink to="/contactUs" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">Contact us</NavLink>
-                    <NavLink to="/FAQ" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">FAQ</NavLink>
-                    <NavLink to="/signIn" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} style={{textDecoration:"none", display:type}} className="toggleButton"> 
-                        Sign in
-                    </NavLink>
+                <div className="toggleMain" style={{display:toggle ? "block" : "none"}}>
+                    <div className="toggle">
+                        <NavLink to="/about" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">About</NavLink>
+                        <NavLink to="/contactUs" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">Contact us</NavLink>
+                        <NavLink to="/FAQ" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} className="toggleMenu">FAQ</NavLink>
+                        <NavLink to="/signIn" onClick={() => {setToggle(!toggle);setimgX(!imgX)}} style={{textDecoration:"none", display:type}} className="toggleButton"> 
+                            Sign in
+                        </NavLink>
+                    </div>
                 </div>
+
                 <ul className="menuItem" 
                     style={{width:Width,animationName:state.animationPath === "/userPage/userHome" ? "navAnimation" : "null"}}>
                     <NavLink to="/about" className="name">About</NavLink>
@@ -36,11 +41,16 @@ function Headers({type,Width}) {
                     <NavLink to="/signIn" style={{textDecoration:"none", display:type}}> 
                         <button className="menuItemButton">Sign in</button>
                     </NavLink>
-                    <select className="languig-Div">
-                        <option>EN</option>
-                        <option>RU</option>
-                        <option>AM</option>
-                    </select>
+                    <div className="languig-Div" onClick={() => setSelect(!select)}>{inner} 
+                        <ul className="option" style={{display:select  ? "block" : "none"}}>
+                            {state.innerSelect.map((val) => {
+                               return <li key={Math.random()} onClick={(e) => {
+                                        setSelect(!select)
+                                        setInner(val)
+                                    }}>{val}</li>
+                            })}
+                        </ul>
+                    </div>
                 </ul>
                 
                 <button className={state.regAndsignNone ? "toggleImg" : "toggleNone"} onClick={() => {

@@ -16,13 +16,15 @@ export function Hook() {
         if(time.startTiem) {
             timeId = setInterval(() => {
                 setTime({...time,borderSize:time.borderSize += 0.0000121});
-                if(time.second === 60) {
-                    setTime({...time,second:time.second = 0,minute:time.minute += 1});
-                } else if(time.minute === 60){
-                    setTime({...time,hours:time.hours += 1,minute:time.minute = 0});
-                }else {
-                    setTime({...time,second:time.second += 1});
-                }
+                setTime({...time,second:time.second += 1});
+
+                // if(time.second === 60) {
+                //     setTime({...time,second:time.second = 0,minute:time.minute += 1});
+                // } else if(time.minute === 60){
+                //     setTime({...time,hours:time.hours += 1,minute:time.minute = 0});
+                // }else {
+                //     setTime({...time,second:time.second += 1});
+                // }
             },1000)
         }
 

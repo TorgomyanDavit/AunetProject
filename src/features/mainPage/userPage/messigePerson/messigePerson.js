@@ -18,7 +18,7 @@ export function MessigePerson() {
                     <div key={Math.random()} className="personDiv">
                         <p><img src={val.img} alt=""/></p>
                         <div className="personDescription">
-                            <h2>{val.name}</h2>
+                            <a href="#">{val.name}</a>
                             <p>{val.description}</p>
                             <span>{val.date}</span>
                         </div>

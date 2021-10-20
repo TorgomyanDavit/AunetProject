@@ -5,12 +5,12 @@ import "./responsive.css"
 
 
 
-export function ContactUs() {
+export function ContactUs({toggle}) {
     const state = useSelector((state) => state.mainPage)
     return (
         <div className="contactUs">
-            <div className="contactUsDiv"><h2>Contact Us</h2></div>
-            <div className="contactDiv">
+            <div className="contactUsDiv" style={{zIndex:toggle ? "-1" : "inherit"}} ><h2>Contact Us</h2></div>
+            <div className="contactDiv" style={{zIndex:toggle ? "-1" : "inherit"}} >
                 <p className="registerNewTitle">Contscts :</p>
                 <a href="mailTo:AllNet@mail.ru"><img src="/mainPageImages/messigeimg.png" alt=""/>AllNet@mail.ru</a>
                 <a id="afterLine" href="tel:+374 (00) 00-00-00"><img src="/mainPageImages/phone.png" alt=""/>+374 (00) 00-00-00</a>
@@ -22,7 +22,7 @@ export function ContactUs() {
                     })}
                 </div>
             </div>
-            <div className="contactData">
+            <div className="contactData" style={{zIndex:toggle ? "-1" : "inherit"}} >
                     <form className="contactFormTetx" onSubmit={(e) => e.preventDefault()}>
                         <div>
                             <input type="text" placeholder="Name"/>

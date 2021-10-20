@@ -8,7 +8,7 @@
 .signInImgDiv {
     width: fit-content;
     height: fit-content;
-    margin: 33px 87px 0 238px;
+    margin: 33px 87px 0 0;
     position: relative;
 }
 
@@ -30,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
+    /* margin-right: 240px; */
 
 }
 
@@ -52,7 +53,7 @@
 .signInButtonUnderLine {
     position: absolute;
     bottom: -10px;
-    right: 191px;
+    right: 183px;
     width: 69px;
     height: 3px;
     background: #EEBA06;
@@ -97,8 +98,12 @@
     padding-left: 40px;
 }
 
+.formSignIn input:focus {
+    border: 3px solid #EEBA06;
+}
+
 .formSignIn input::placeholder {
-    color: rgba(40, 40, 40, 0.1);
+    color: rgba(40, 40, 40, 0.226);
     font-weight: 600;
 }
 
@@ -154,6 +159,11 @@
     align-items: center;
 }
 
+.signInSubmit:hover {
+    background: #2A29B4;
+    color: white;
+}
+
 .signInunderLine {
     width: 460px;
     text-align: center;
@@ -175,6 +185,10 @@
     cursor: pointer;
     width: 78px;
     height: 78px;
+}
+
+.signInSocialMediaIcon p:hover {
+    background: #EEBA06 !important;
 }
 
 .SignInSocialNetworkTitle {

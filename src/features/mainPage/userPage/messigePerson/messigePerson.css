@@ -27,12 +27,19 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    cursor: context-menu;
 }
 
-.personDescription h2{
+.personDescription a{
     font-size: 30px;
     font-weight: 600;
     color:#282828;
+    text-decoration: none;
+}
+
+.personDescription a:hover {
+    color: #2A29B4;
+    text-decoration: underline !important;
 }
 
 .personDescription > p {

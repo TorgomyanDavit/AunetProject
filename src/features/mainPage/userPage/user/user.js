@@ -30,8 +30,6 @@ export default function User() {
         return () => {
             clearTimeout(id)
             clearTimeout(id2)
-            
-
             dispatch(changeAnimationPathDone({value:"undefined"}))
             dispatch(changeAnimation({value:"/userPerson"}))
         }
@@ -54,7 +52,7 @@ export default function User() {
 
             {displayAfter  ? <span className="afterName" 
                 style={{animationName:state.animationPath === "/userPage/userHome" ? "afterName" : "null"
-            }}><img src="/mainPageImages/buttonSlack.png"/></span> : null} 
+            }}><img src="/mainPageImages/buttonSlack.png" alt=""/></span> : null} 
             <AnimationTimer style={{opacity:1}}/>
             <div className="UserPersonImg"
                 style=
@@ -82,8 +80,7 @@ export default function User() {
                 }}>
                 {state.personData.map((val,index) => {
                     return (
-                        <div key={val.id} className="personName"             
-                            style={{animationName:state.animationPath === "/userPage/userHome" ? "personName" : "null"}}>
+                        <div key={val.id} className="personName" style={{animationName:state.animationPath === "/userPage/userHome" ? "personName" : "null"}}>
                             {val.dataName} 
                             {
                                 index === 1 ? <a href={"mailTo:"+val.inner+""}>{val.inner}</a> 
@@ -106,7 +103,7 @@ export default function User() {
                     animationName:
                     state.animationPath === "/userPage/userHome" ? "buttonPosition" :
                     state.animationPath === "/statisticPortal" ? "buttonPositionforPortal" : "null"
-                }}>{buttonNAme ? "Sava" : "Active"}</button>
+                }}>{buttonNAme ? "Save" : "Active"}</button>
             </form>
         </section>
     )

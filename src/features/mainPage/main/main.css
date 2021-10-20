@@ -1,4 +1,5 @@
 .main {
+    font: Montserrat;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +21,7 @@
     z-index: 2;
 }
 
-.registerDiv h1 {
+.registerDiv h2 {
     font-size: 59px;
     font-weight: 600;
     text-align: left;
@@ -67,6 +68,7 @@
 
 .Navlink:nth-child(2) {
     border: 3px solid #282828;
+    margin-bottom: 50px;
 }
 
 .Navlink:nth-child(2):hover {
@@ -110,6 +112,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    display: none;
 }
 
 .animation {

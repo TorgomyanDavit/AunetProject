@@ -1,3 +1,10 @@
+
+@media (max-width:1550px) and (min-width:376px) {
+    .about p {
+        z-index: 1 !important;
+    }
+}
+
 @media screen and (max-width:1540px) {
     .about {
         width: 100%;

@@ -22,7 +22,7 @@
 .homeImgDiv {
     width: 1011px;
     height: 414px;
-    background: radial-gradient( #C5C5FF 0%, #6969FF 100%);
+    background: radial-gradient( #C5C5FF -100%, #6969FF 100%);
     position: relative;
     display: flex;
     border-radius: 20px;
@@ -55,7 +55,7 @@
 }
 
 .description {
-    font-size: 40px;
+    font-size: 33px;
     color: #ffffff;
     font-weight: 700;
 }
@@ -83,6 +83,13 @@
     border: 1px solid #EEBA06;
     outline: none;
     cursor: pointer;
+}
+
+.mainImgButton:hover {
+    background: #2A29B4;
+    color: white;
+    border: 1px solid #2A29B4;
+
 }
 
 .slick-slider {
@@ -217,8 +224,20 @@
     cursor: pointer;
 }
 
+.timerButton:hover {
+    background: #2A29B4;
+    color: white;
+    border: 1px solid #2A29B4;
+}
+
 #timerButton2 {
     animation-duration: 1s;
+}
+
+#timerButton2:hover {
+    background: #2A29B4;
+    color: white;
+    border: 1px solid #2A29B4;
 }
 
 @keyframes timerButton2 {
@@ -309,6 +328,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+}
+
+.socialImageDiv a:hover {
+    background: #EEBA06 !important;
 }
 
 .mainChannelGroup {
@@ -466,6 +489,11 @@
     animation-duration: 1s;
 }
 
+.user button:hover {
+    background: #2A29B4;
+    color: white;
+}
+
 @keyframes userButton {
     0%{
         opacity: 0;
@@ -604,6 +632,7 @@
 }
 
 .messigeButton {
+    display: none;
     outline: none;
     position: absolute;
     bottom: 80px;
@@ -651,4 +680,8 @@
         display: none;
         opacity: 0;
     }
+}
+
+.slick-list {
+    border-radius: 20px;
 }

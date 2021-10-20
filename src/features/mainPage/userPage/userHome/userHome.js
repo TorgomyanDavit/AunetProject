@@ -32,13 +32,14 @@ function UserHome({changePlay}) {
     },[])
     
     useEffect(() => {
+        
         const canvas = canvasRef.current
         const context = canvas.getContext("2d")
         context.clearRect(0,0,context.canvas.width,context.canvas.height)
         context.beginPath()
-        context.arc(90, 75, 55, 0, 2 * Math.PI);
+        context.arc(90, 75, 55, 0, time.borderSize * Math.PI);
         context.lineWidth = 6;
-        context.strokeStyle = "#00A3FF";
+        time.borderSize > 2 ? context.strokeStyle = "red" : context.strokeStyle = "#00A3FF";
         context.stroke();
     },[time.second])
 
@@ -58,12 +59,10 @@ function UserHome({changePlay}) {
                         <div className="timer-Div" id="timerDiv1" 
                             style={{animationName:state.animationPath === "/statisticPortal" ? "timerDiv1" : "null"}}
                         >
-                            <p className="timer">
-                                {time.hours + ":" + time.minute + ":" + time.second}
-                            </p>
+                            <p className="timer">20.04.2021{/* {time.hours + ":" + time.minute + ":" + time.second} */}</p>
                             <canvas ref={canvasRef} className="timering"></canvas>
                             <div className="timerButtonDiv">
-                                <p className="ActiveUntil">Active until :</p>
+                                {/* <p className="ActiveUntil">Active until :</p> */}
                                 <p className="date">21.03.2021 - 20.04.2021</p>
                                 <button 
                                 style={{animationName:state.animationPath === "/userPerson" ? "timerButton2" : "null"}}
