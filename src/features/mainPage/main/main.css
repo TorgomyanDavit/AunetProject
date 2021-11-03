@@ -68,7 +68,7 @@
 
 .Navlink:nth-child(2) {
     border: 3px solid #282828;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .Navlink:nth-child(2):hover {
@@ -89,6 +89,7 @@
     margin-top: 51px;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .underLine {
@@ -112,7 +113,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: none;
 }
 
 .animation {

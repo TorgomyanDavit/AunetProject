@@ -157,6 +157,11 @@
 }
 
 @media (max-width:374px) {
+
+    .timerButton {
+        width: 119px;
+    }
+    
     .date {
         font-size: 11px;
     }

@@ -18,7 +18,7 @@
 
 }
 
-@media (max-width:1550px) and (min-width:376px) {
+@media (max-width:1550px) and (min-width:500px) {
     .faqP {
         z-index: 1 !important;
     }

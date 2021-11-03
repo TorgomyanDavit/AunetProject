@@ -30,13 +30,13 @@ function MainPage() {
                     <ContactUs toggle={toggle}/>
                 </Route>
                 <Route path="/register">
-                    <Register/>
+                    <Register toggle={toggle}/>
                 </Route>
                 <Route path="/signIn">
-                    <SignIn/>
+                    <SignIn toggle={toggle}/>
                 </Route>
                 <Route path="/userPage">
-                    <UserHeader/>
+                    <UserHeader toggle={toggle}/>
                 </Route>
                 <Route path="/">
                     <Main changeType = {(display,size) => {

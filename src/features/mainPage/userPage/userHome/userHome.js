@@ -32,12 +32,11 @@ function UserHome({changePlay}) {
     },[])
     
     useEffect(() => {
-        
         const canvas = canvasRef.current
         const context = canvas.getContext("2d")
         context.clearRect(0,0,context.canvas.width,context.canvas.height)
         context.beginPath()
-        context.arc(90, 75, 55, 0, time.borderSize * Math.PI);
+        context.arc(90, 75, 55, 0,time.borderSize * Math.PI);
         context.lineWidth = 6;
         time.borderSize > 2 ? context.strokeStyle = "red" : context.strokeStyle = "#00A3FF";
         context.stroke();

@@ -106,7 +106,8 @@
     }
 
     .homeImg img{
-        width: inherit;
+        width: 500px;
+        margin: 0 auto;
         height: inherit;
     }
 
@@ -224,7 +225,7 @@
     }
 
     .TvChannels p :Link img {
-        width: 90%;
+        width:unset;
         height: 21px;
     }
     
@@ -243,7 +244,7 @@
 @media (max-width:1024px) {
 
     .TvChannels p :Link img {
-        width: 45%;
+        width:unset;
     }
 
     .Channels {
@@ -326,6 +327,12 @@
 }
 
 @media (max-width:600px) {
+
+    .homeImg img{
+        width: 345px;
+        margin: 0 auto;
+        height: inherit;
+    }
 
     .userName {
         width: 60%;
@@ -597,12 +604,47 @@
     }
 }
 
-@media (max-width:320px)  {
+@media (max-width:335px)  {
+    .active-contacts-div .timer-Div .timer {
+        left: -14px;
+    }
+
+    .socialImageDiv {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+
+    
     #timerDiv1 .timering{
         left: -51px;
     }
 
-    .active-contacts-div .timer-Div .timer {
-        left: -14px;
+    .userName p span:nth-child(2) {
+        font-size: 10px;
+    }
+
+    .userName p span:nth-child(1) {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:374px) {
+
+    .homeImg img {
+        width: 100%;
+    }
+    .groupinput label {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:320px)  {
+
+    .TvChannels p :Link img {
+        width: 100%;
+    }
+
+    .groupinput label input {
+        margin-right: 2px;
     }
 }

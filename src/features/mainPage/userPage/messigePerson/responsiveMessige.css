@@ -13,6 +13,11 @@
 }
 
 @media (max-width:600px) {
+
+    .personDescription a {
+        font-size: 12px;
+    }
+
     .personDiv {
         gap: 13px;
         width: 345px;
@@ -35,7 +40,7 @@
     .personDescription > p {
         font-size: 12px;
         font-weight: 500;
-        width: 149px;
+        width: 186px;
         line-height: 15px;
     }
 

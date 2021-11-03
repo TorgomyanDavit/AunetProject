@@ -352,9 +352,9 @@
         margin-left: 25px;
     }
 
-    .formatinput input {
+    /* .formatinput input {
         margin-right: unset;
-    }
+    } */
 
     .channelS {
         width: 345px;
@@ -362,7 +362,23 @@
 
 }
 
+
+
+
 @media (max-width:374px) {
+
+    .formatinput {
+        font-size: 12px;
+    }
+    
+    .formatInputDivh2 {
+        padding-top: 5px;
+    }
+
+    .checkboxDiv > p {
+        font-size: 9px;
+    }
+
     .firstThreepageDivheader {
         width: 100%;
         padding-left: unset;

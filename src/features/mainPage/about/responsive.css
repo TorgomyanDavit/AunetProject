@@ -1,6 +1,10 @@
 
-@media (max-width:1550px) and (min-width:376px) {
+@media (max-width:1550px) and (min-width:500px) {
     .about p {
+        z-index: 1 !important;
+    }
+
+    .about div {
         z-index: 1 !important;
     }
 }

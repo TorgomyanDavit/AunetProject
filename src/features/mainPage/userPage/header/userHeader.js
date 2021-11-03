@@ -15,14 +15,14 @@ import "./responsive.css"
 
 
 
-function UserHeader() {
+function UserHeader({toggle}) {
     const state = useSelector((state) => state.mainPage)
     const [play,setPlay] = useState(false)
     const [animationPath,setAnimationPAth] = useState("")
 
 
     return (
-        <div className="userMainPAge">
+        <div className="userMainPAge" style={{zIndex:toggle ? "-1" : "inherit"}}>
             <Router>
             <div className="userPageMenu">
                 <div className="iconDiv">

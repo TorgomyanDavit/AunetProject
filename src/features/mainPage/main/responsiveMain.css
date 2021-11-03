@@ -34,7 +34,7 @@
     }
 
     .TvchannelDiv {
-        bottom: 150px;
+        bottom: 73px;
         width: 100%;
         flex-wrap: wrap;
     }
@@ -44,6 +44,7 @@
     }
 
     .underLine {
+        z-index: -1;
         bottom: 0px;
     }
 
@@ -54,9 +55,15 @@
 
 }
 
-@media (max-width:1550px) and (min-width:376px) {
+@media (max-width:1550px) and (min-width:500px) {
     .main {
         z-index: 1 !important;
+    }
+}
+
+@media (max-width:1300px) {
+    .underLine {
+        display: none;
     }
 }
 
@@ -116,6 +123,7 @@
     }
 
     .TvchannelDiv {
+        justify-content: space-evenly;
         position: unset;
         width: 341px;
     }
@@ -157,7 +165,7 @@
     }
 
     .Navlink:nth-child(2) {
-        margin-bottom: 190px;
+        margin-bottom: 0;
     }
 
     .underLine {

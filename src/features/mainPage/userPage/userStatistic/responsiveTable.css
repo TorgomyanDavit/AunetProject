@@ -91,6 +91,14 @@
 }
 
 @media (max-width:750px) {
+    #th5 {
+        padding: unset;
+    }
+
+    .titleTable th {
+        text-align: center;
+    }
+
     .statisticMain {
         width: 100%;
     }
@@ -200,6 +208,11 @@
 }
 
 @media (max-width:374px) {
+
+    .stateTable :nth-child(1n+3) {
+        padding-right: unset;
+    }
+
     .historyMain {
         width: 100%;
     }

@@ -6,23 +6,23 @@ import "./register.css"
 import "./responsive.css"
 
 
-function Register() {
+function Register({toggle}) {
     let [type,setType] = useState({
         password:"password",
         repeatPassword:"password"
     })
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(changeRegAndSignImgdisplay())
+    // useEffect(() => {
+    //     dispatch(changeRegAndSignImgdisplay())
 
-        return () => {
-            dispatch(changeRegAndSignImgdisplay())
-        }
-    },[])
+    //     return () => {
+    //         dispatch(changeRegAndSignImgdisplay())
+    //     }
+    // },[])
     
     return (
-        <div className="registerMAin">
+        <div className="registerMAin" style={{zIndex:toggle ? "-1" : "inherit"}}>
             <div className="registerImgDiv">
                 <img src="/mainPageImages/registerImg.png" alt="registerImg"/>
             </div>

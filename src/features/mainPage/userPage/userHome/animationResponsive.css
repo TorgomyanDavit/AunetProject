@@ -273,11 +273,18 @@
     }
 }
 
+@media (max-width:1024px) and (min-width:1024px)  {
+    .channels2 {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width:1024px) {
 
     #timerDiv1 {
         animation: unset;
     }
+
     .channels2 {
         animation: unset;
     }

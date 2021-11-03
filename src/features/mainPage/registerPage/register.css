@@ -49,6 +49,7 @@
 }
 
 .activeRegisterButton {
+    position: relative;
     color: #010023;
 }
 
@@ -58,8 +59,8 @@
 
 .registerButtonUnderLine {
     position: absolute;
-    bottom: 45px;
-    left: 150px;
+    bottom: -10px;
+    left: 0;
     width: 69px;
     height: 3px;
     background: #EEBA06;

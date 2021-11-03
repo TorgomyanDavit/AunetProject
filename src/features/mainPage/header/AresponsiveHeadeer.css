@@ -29,10 +29,18 @@
     }
 }
 
+@media screen and (max-width:500px) {
+    .toggleMain {
+        left: 0;
+        right: 0 !important;
+        margin: 0 auto;
+    }
+}
+
+
+
 
 @media (max-width:375px) {
-
-
     .menuLogo {
         width: 107px !important;
         height: 41px !important;
@@ -75,4 +83,16 @@
     .toggleButton {
         width: 90% !important;
     }
+}
+
+@media (max-width:374px) {
+
+    .toggleMain {
+        padding: 0 15px;
+    }
+
+    .toggle {
+        width: 100% !important ;
+    }
+
 }

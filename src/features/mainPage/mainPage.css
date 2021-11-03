@@ -17,6 +17,7 @@ body {
 
 @media (max-width:900px) {
     .MainPage {
+        /* padding: 0 15px; */
         height: fit-content;
     }
 }

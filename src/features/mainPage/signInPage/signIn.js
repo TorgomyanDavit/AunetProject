@@ -7,19 +7,19 @@ import { useDispatch } from "react-redux";
 
 
 
-function SignIn() {
+function SignIn({toggle}) {
     let [type,setType] = useState("password")
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(changeRegAndSignImgdisplay())
+    // useEffect(() => {
+    //     dispatch(changeRegAndSignImgdisplay())
 
-        return () => {
-            dispatch(changeRegAndSignImgdisplay())
-        }
-    },[])
+    //     return () => {
+    //         dispatch(changeRegAndSignImgdisplay())
+    //     }
+    // },[])
     return (
-        <div className="mainSignIn">
+        <div className="mainSignIn" style={{zIndex:toggle ? "-1" : "inherit"}}>
             <div className="signInImgDiv">
                 <img src="/mainPageImages/signInImg.png" alt="registerImg"/>
                 <img src="/mainPageImages/signInElipsImg.png" alt="signInElipseImg" className="signInElipsImg"/>

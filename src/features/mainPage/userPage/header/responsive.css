@@ -10,9 +10,17 @@
     }
 }
 
+@media (max-width:1800px) and (min-width:500px) {
+    .userMainPAge {
+        z-index: 1 !important;
+    }
+}
+
+
+
 @media (max-width:600px) {
     .iconDiv {
-        margin-top: 10px;
+        margin-top: 20px;
         height: fit-content;
         display: flex;
         flex-direction: unset;
@@ -28,6 +36,7 @@
     }
 
     .userMainPAge {
+        padding: 0 15px;
         flex-direction: column;
     }
 
@@ -45,6 +54,8 @@
         bottom: 0%;
         left: 0%;
         align-items: unset;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .exitIcon {
